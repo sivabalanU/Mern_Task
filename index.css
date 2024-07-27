@@ -1,0 +1,164 @@
+/* Existing CSS code */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+    font-family: Arial, sans-serif; 
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 700px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.box1 {
+    background: linear-gradient(to bottom, #703BE7 0%, #273BE2 100%);
+    width: 50%;
+    text-align: center;
+    color: #C7C1FF;
+}
+
+.box1 h2 {
+    margin: 10px 0;
+}
+
+.score {
+    background-color: #5729CE;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.s1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.description {
+    font-size: 14px;
+    margin: 20px 0 0 0;
+}
+
+.score p {
+    margin: 0;
+}
+
+.box2 {
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+}
+
+.head {
+    margin: 0;
+    color: #333;
+}
+
+.mark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.flex1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.mark1 {
+    color: #F08080;
+    background-color: #fff6f5;
+}
+
+.mark2 {
+    color: #f8de7e;
+    background-color: #fffae9;
+}
+
+.mark3 {
+    color: #7CB7BB;
+    background-color: #f2fafa;
+}
+
+.mark4 {
+    color: #2138AB;
+    background-color: #e1eff1;
+}
+
+.btn {
+    background-color: #2E3F62;
+    color: #EEF6F7;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    padding: auto;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: #1c2c48;
+}
+
+.head {
+    font-size: 25px;
+    position: relative;
+    right: 110px;
+}
+
+/* Responsive CSS code */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        max-width: 90%;
+        height: auto;
+    }
+
+    .box1, .box2 {
+        width: 100%;
+    }
+
+    .box1 {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .box2 {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .box1 p {
+        padding: 0 10px;
+        word-break: break-word;
+    }
+
+    .box1 p::after {
+        content: " ";
+        white-space: pre;
+    }
+
+    .head {
+        font-size: 20px;
+        position: static;
+    }
+}
